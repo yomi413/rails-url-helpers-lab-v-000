@@ -7,7 +7,7 @@ class StudentsController < ApplicationController
   end
 
   def show
-    @student = Student.find_by(params[:id])
+    set_student
   end
 
   def activate
