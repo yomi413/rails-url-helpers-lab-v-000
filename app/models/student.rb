@@ -1,5 +1,5 @@
 class Student < ActiveRecord::Base
-  before_save :default_values
+  before_create :default_values
 
   def to_s
     self.first_name + " " + self.last_name
