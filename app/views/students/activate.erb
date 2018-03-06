@@ -1,7 +1,3 @@
-<h1><%= @student %></h1>
+<p><%= @student.active, student_path(student) %></p>
 
-<% if !@student.active %>
-  <p>This student is currently active.</p>
-<% else %>
-  <p>This student is currently inactive.</p>
-<% end %>
+
