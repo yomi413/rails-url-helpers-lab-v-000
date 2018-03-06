@@ -7,8 +7,10 @@ class StudentsController < ApplicationController
   end
 
   def show
-    # binding.pry
     @student = Student.find_by(params[:id])
+  end
+
+  def activate_student_path 
   end
 
   private
