@@ -1,4 +1,4 @@
-class RemoveActiveColumn < ActiveRecord::Migration
+class RemoveActiveColumnFromStudents < ActiveRecord::Migration
   def change
     remove_column :students, :active
   end
