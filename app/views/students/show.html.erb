@@ -7,6 +7,8 @@
 
 <% if @student.active %>
   <p>This student is currently active.</p>
-<% else %>
+<% end %>
+
+<% if !@student.active %>
   <p>This student is currently inactive.</p>
 <% end %>
