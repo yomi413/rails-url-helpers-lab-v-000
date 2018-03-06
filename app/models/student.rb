@@ -5,7 +5,7 @@ class Student < ActiveRecord::Base
     self.first_name + " " + self.last_name
   end
 
-  def defaults
+  def default_values
     self.active ||= false
   end
 
