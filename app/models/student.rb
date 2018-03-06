@@ -5,8 +5,8 @@ class Student < ActiveRecord::Base
     self.first_name + " " + self.last_name
   end
 
-  def defaults
-    self.active ||= "This student is currently active."
-  end
+  # def defaults
+  #   self.active ||= "This student is currently active."
+  # end
 
 end
