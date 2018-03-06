@@ -11,7 +11,7 @@ class StudentsController < ApplicationController
   end
 
   def activate_student
-    @student = Student.find_by(params[:id])
+    !!@student.active 
   end
 
   private
